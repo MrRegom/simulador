@@ -1,0 +1,17 @@
+# uploads y downloads
+/public/uploads/
+/public/downloads/
+
+# videos y binarios pesados
+/web/videos/
+/*.zip
+/**/*.zip
+/**/*.exe
+/**/*.mp4
+
+# logs
+*.log
+
+# env
+.env
+.env.*
