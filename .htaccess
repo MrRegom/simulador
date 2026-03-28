@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Redirigir todo a la carpeta public/ de forma transparente
+    # Pero permitir archivos de diagnóstico en la raíz
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteCond %{REQUEST_URI} !debug_auth\.php
+    RewriteCond %{REQUEST_URI} !fix_admin\.php
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

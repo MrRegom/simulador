@@ -1,0 +1,222 @@
+:root {
+    /* QUANTUM THEME VARIABLES */
+    --bg-body: #0b1118;
+    /* Fondo General */
+    --bg-panel: #141c26;
+    /* Fondo Tarjetas y Sidebar */
+    --bg-header: #141c26;
+
+    --accent-primary: #00e396;
+    /* Verde Quantum (Activo) */
+    --accent-secondary: #008ffb;
+    /* Azul Datos */
+    --accent-danger: #f33a55;
+    /* Rojo Alertas */
+
+    --text-bright: #ffffff;
+    --text-muted: #8898aa;
+
+    --border-color: #253040;
+}
+
+body {
+    background-color: var(--bg-body);
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--text-muted);
+}
+
+/* --- ADMINLTE OVERRIDES FOR QUANTUM LOOK --- */
+
+.app-wrapper {
+    background-color: var(--bg-body);
+}
+
+/* Sidebar Styling */
+.app-sidebar {
+    background-color: var(--bg-panel);
+    border-right: 1px solid var(--border-color);
+}
+
+.sidebar-brand {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 1.5rem;
+}
+
+.brand-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-bright);
+    letter-spacing: 2px;
+}
+
+.brand-text span {
+    color: var(--accent-primary);
+}
+
+.sidebar-menu .nav-link {
+    color: var(--text-muted);
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    border-left: 3px solid transparent;
+    border-radius: 0;
+}
+
+.sidebar-menu .nav-link:hover {
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text-bright);
+}
+
+.sidebar-menu .nav-link.active {
+    background: linear-gradient(90deg, rgba(0, 227, 150, 0.1) 0%, transparent 100%);
+    border-left-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.sidebar-menu .nav-icon {
+    width: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* Top Navbar Styling */
+.app-header {
+    background-color: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+    height: 70px;
+}
+
+/* Content Area */
+.app-content {
+    padding: 2rem;
+}
+
+/* --- QUANTUM CARDS --- */
+.card-quantum {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    /* Bordes técnicos, poco radio */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-quantum::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.03) 50%);
+    pointer-events: none;
+}
+
+.card-header-q {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title-q {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-bright);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.card-body-q {
+    padding: 20px;
+}
+
+/* Status Indicators */
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 5px currentColor;
+}
+
+.status-green {
+    color: var(--accent-primary);
+}
+
+.status-red {
+    color: var(--accent-danger);
+}
+
+.status-blue {
+    color: var(--accent-secondary);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--text-bright);
+}
+
+.text-quantum {
+    color: var(--accent-primary);
+}
+
+.text-danger-q {
+    color: var(--accent-danger);
+}
+
+/* Buttons */
+.btn-q {
+    background: var(--accent-primary);
+    color: #000;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+
+.btn-q:hover {
+    box-shadow: 0 0 15px rgba(0, 227, 150, 0.4);
+    background: #00ef9f;
+}
+
+.btn-q-outline {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+}
+
+.btn-q-outline:hover {
+    border-color: var(--text-bright);
+    color: var(--text-bright);
+}
+
+/* Custom Grid for Inputs */
+.form-control-q {
+    background: #0b1118;
+    border: 1px solid var(--border-color);
+    color: var(--text-bright);
+    border-radius: 2px;
+}
+
+.form-control-q:focus {
+    background: #0b1118;
+    color: var(--text-bright);
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 2px rgba(0, 227, 150, 0.1);
+}

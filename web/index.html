@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4R SIMRACING - Vive la Experiencia F1</title>
+    <meta name="description"
+        content="Arriendo de simuladores de F&oacute;rmula 1 de alta gama. Vive la m&aacute;xima velocidad con A4R SIMRACING.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="container">
+            <div class="logo logo-image">
+                <img src="img/logoa4r.png" alt="A4R Simracing">
+            </div>
+            <div class="nav-links">
+                <a href="#experiencia">Experiencia</a>
+                <a href="#simuladores">Simuladores</a>
+                <a href="#ranking">Ranking</a>
+                <a href="#contacto" class="btn-primary">Cotizar</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="videos/vid2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="container hero-content" data-aos="fade-up">
+            <h1 class="glitch" data-text="VIVE LA EXPERIENCIA">VIVE LA <span class="highlight">EXPERIENCIA</span></h1>
+            <p>Siente la adrenalina de un monoplaza de F&oacute;rmula 1 en nuestros simuladores de alta gama.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/56971302193?text=Hola%20A4R,%20me%20gustar%C3%ADa%20cotizar%20un%20arriendo"
+                    class="btn-main">
+                    <i class="fab fa-whatsapp"></i> Arrendar Ahora
+                </a>
+                <a href="#ranking" class="btn-secondary">Ver Ranking</a>
+            </div>
+        <div class="hero-carousel" aria-label="Carrusel de anuncios">
+            <a class="hero-slide active" href="https://wa.me/56971302193">
+                <span class="slide-tag">Evento</span>
+                <strong>Reserva tu experiencia F1</strong>
+            </a>
+            <a class="hero-slide" href="#ranking">
+                <span class="slide-tag">Ranking</span>
+                <strong>Revisa el ranking en vivo</strong>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="experience section-padding">
+        <div class="container">
+            <div class="grid-2">
+                <div class="text-content" data-aos="fade-right">
+                    <h2 class="section-title">LO &Uacute;LTIMO EN <span class="red-text">SIMRACING</span></h2>
+                    <p>En A4R, llevamos la simulaci&oacute;n al siguiente nivel. Nuestras butacas profesionales est&aacute;n dise&ntilde;adas
+                        para replicar cada vibraci&oacute;n, cada curva y cada frenada de los circuitos m&aacute;s ic&oacute;nicos del mundo.
+                    </p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Monoplazas configurables</li>
+                        <li><i class="fas fa-check"></i> Volantes con Force Feedback real</li>
+                        <li><i class="fas fa-check"></i> Experiencia inmersiva 4K</li>
+                        <li><i class="fas fa-check"></i> Pedaleras de alta precisi&oacute;n</li>
+                    </ul>
+                </div>
+                <div class="image-content" data-aos="fade-left">
+                    <div class="img-container-premium">
+                        <img src="img/equipotrabajo.jpeg" alt="Equipo de trabajo A4R">
+                        <div class="gradient-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="simuladores" class="gallery section-padding gray-bg">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">NUESTRO <span class="red-text">SETUP</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="img/img1.jpeg" alt="Setup A4R 1">
+                    <div class="item-overlay">
+                        <span>ESTACI&Oacute;N DE PILOTAJE</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="img/img2.jpeg" alt="Setup A4R 2">
+                    <div class="item-overlay">
+                        <span>PODIO DE GANADORES</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ranking Section -->
+    <section id="ranking" class="ranking-section section-padding" data-api-base="/a4r">
+        <div class="container">
+            <div class="ranking-header" data-aos="fade-up">
+                <div class="ranking-title">
+                    <span class="eyebrow">A4R SIMRACING</span>
+                    <h2 class="section-title">RANKING POR <span class="red-text">PISTA</span></h2>
+                    <p>Resultados en vivo por circuito, historial de pistas y tiempos destacados. Actualiza solo.</p>
+                </div>
+                <div class="ranking-actions">
+                    <button id="soundToggle" class="sound-toggle" type="button">Sonido OFF</button>
+                    <div class="range-toggle" role="group" aria-label="Rango de tiempo">
+                        <button class="range-btn" data-range="7d">7 d&iacute;as</button>
+                        <button class="range-btn active" data-range="30d">30 d&iacute;as</button>
+                        <button class="range-btn" data-range="all">Hist&oacute;rico</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ranking-stage">
+                <div class="ranking-intro">
+                    <div class="intro-card">
+                        <span class="eyebrow">A4R SIMRACING</span>
+                        <h3>Revisa el ranking en vivo</h3>
+                        <p>Mira el podio, el top 20 y la pista activa del momento.</p>
+                        <button id="enterRanking" class="btn-main">Ver Ranking</button>
+                    </div>
+                </div>
+
+                <div class="ranking-grid">
+                    <div class="ranking-board" data-aos="fade-right">
+                        <div class="board-header">
+                            <div>
+                                <span class="eyebrow">Pista seleccionada</span>
+                                <h3 id="trackTitle">Cargando...</h3>
+                            </div>
+                            <div class="board-meta">
+                                <span id="trackMeta">Preparando datos</span>
+                                <span id="lastUpdated">Actualizado: --</span>
+                            </div>
+                        </div>
+                        <div class="ranking-banner">
+                            <span>Ranking en vivo &middot; Top 10</span>
+                        </div>
+                        <div class="podium" id="podium">
+                            <div class="podium-card second" id="podium2">
+                                <div class="podium-rank">02</div>
+                                <div class="podium-avatar"></div>
+                                <div class="podium-name">--</div>
+                                <div class="podium-time">--:--.---</div>
+                            </div>
+                            <div class="podium-card first" id="podium1">
+                                <div class="podium-rank">01</div>
+                                <div class="podium-avatar"></div>
+                                <div class="podium-name">--</div>
+                                <div class="podium-time">--:--.---</div>
+                            </div>
+                            <div class="podium-card third" id="podium3">
+                                <div class="podium-rank">03</div>
+                                <div class="podium-avatar"></div>
+                                <div class="podium-name">--</div>
+                                <div class="podium-time">--:--.---</div>
+                            </div>
+                        </div>
+                        <div id="rankingList" class="board-list">
+                            <div class="rank-row skeleton"></div>
+                            <div class="rank-row skeleton"></div>
+                            <div class="rank-row skeleton"></div>
+                        </div>
+                        <button id="loadMoreRanking" class="load-more hidden" type="button">Ver m&aacute;s</button>
+                        <div id="rankingEmpty" class="board-empty hidden">A&uacute;n no hay tiempos registrados en esta pista.</div>
+                    </div>
+
+                    <div class="ranking-side" data-aos="fade-left">
+                        <div class="side-card featured-card">
+                            <span class="eyebrow">Piloto de la semana</span>
+                            <div class="featured-pilot">
+                                <div class="featured-avatar" id="activePilotAvatar">--</div>
+                                <div class="featured-info">
+                                    <h4 id="activeTrackPilot">--</h4>
+                                    <span id="activeTrackName">--</span>
+                                    <small id="activeTrackMeta">Activa ahora</small>
+                                </div>
+                            </div>
+                            <div class="featured-best">
+                                <div>
+                                    <span>Mejor tiempo</span>
+                                    <strong id="activeTrackBest">--:--.---</strong>
+                                </div>
+                                <div>
+                                    <span>Pista</span>
+                                    <strong id="activeTrackLabel">--</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="side-card">
+                            <h4>Pistas recientes</h4>
+                            <div id="recentTracks" class="chip-list"></div>
+                        </div>
+                        <div class="side-card">
+                            <h4>M&aacute;s frecuentes</h4>
+                            <div id="frequentTracks" class="chip-list"></div>
+                        </div>
+                        <div class="side-card">
+                            <label for="trackSelect">Seleccionar pista</label>
+                            <select id="trackSelect"></select>
+                        </div>
+                        <div class="side-card status-card">
+                            <div class="status-dot"></div>
+                            <span id="statusText">Conectando con el ranking...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="contacto" class="cta-section">
+        <div class="container" data-aos="fade-up">
+            <h2>&iquest;LISTO PARA <span class="white-text">CORRER?</span></h2>
+            <p>Arrienda tu experiencia para eventos, cumplea&ntilde;os o entrenamientos privados. Compra o arrienda tu butaca
+                profesional hoy mismo.</p>
+            <div class="cta-contact">
+                <a href="tel:+56971302193" class="cta-card">
+                    <i class="fas fa-phone"></i>
+                    <span>+56 9 7130 2193</span>
+                </a>
+                <a href="https://wa.me/56971302193" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> CONTACTO R&Aacute;PIDO
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <div class="logo-text">
+                        <span class="a">A</span><span class="four">4</span><span class="r">R</span>
+                    </div>
+                    <small>SIMRACING</small>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 A4R SIMRACING. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/56971302193" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+/* A4R GLOBAL MODERN HUD SYSTEM - 2026 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;700;900&family=JetBrains+Mono:wght@400;700;800&display=swap');
+
+:root {
+    --brand-red: #ff0000;
+    --app-bg: #000000;
+    --panel-bg: #0a0a0a;
+    --border-color: rgba(255,255,255,0.05);
+    --accent-primary: #ff0000;
+    --accent-success: #00ff9d;
+    --accent-info: #00d4ff;
+    --modern-radius: 12px;
+}
+
+/* --- GLOBAL LAYOUT --- */
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+    background-color: var(--app-bg) !important;
+    color: #e0e0e0;
+}
+
+.monitor-container, .admin-container {
+    padding: 30px;
+}
+
+/* --- CARDS CYBER DARK --- */
+.cyber-card {
+    background: var(--panel-bg);
+    border: 1px solid #1a1a1a;
+    border-radius: var(--modern-radius);
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.cyber-card-header {
+    background: #111;
+    padding: 20px 25px;
+    border-bottom: 1px solid #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid var(--brand-red);
+}
+
+.card-title-hud {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    color: var(--brand-red);
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* --- SISTEMA DE TABLAS MODERNAS A4R --- */
+.table-hud {
+    margin-bottom: 0 !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    width: 100% !important;
+    font-size: 0.88rem !important;
+}
+
+.table-hud thead th {
+    background: #111 !important;
+    color: #444 !important;
+    font-family: 'Orbitron', sans-serif !important;
+    font-size: 0.65rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    border-bottom: 2px solid #222 !important;
+    padding: 15px !important;
+    font-weight: 700 !important;
+}
+
+.table-hud tbody tr {
+    border-bottom: 1px solid #111 !important;
+    transition: all 0.2s ease !important;
+}
+
+.table-hud tbody tr:hover {
+    background: rgba(40, 40, 40, 0.3) !important;
+    color: #fff !important;
+}
+
+.table-hud td {
+    padding: 12px 15px !important; /* Más angostas según pedido */
+    vertical-align: middle !important;
+    border: none !important;
+}
+
+/* Badges e IDs */
+.id-badge {
+    background: #222;
+    color: #888;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* --- INPUTS & SEARCH --- */
+.input-cyber {
+    background: #000 !important;
+    border: 1px solid #333 !important;
+    color: #fff !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    border-radius: 6px !important;
+}
+
+.input-cyber:focus {
+    border-color: var(--brand-red) !important;
+    box-shadow: 0 0 8px rgba(255,0,0,0.2) !important;
+}
+
+.btn-cyber {
+    background: var(--brand-red);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 800;
+    transition: all 0.3s;
+    border-radius: 6px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.btn-cyber:hover {
+    background: #cc0000;
+    box-shadow: 0 0 15px rgba(255,0,0,0.4);
+    transform: translateY(-1px);
+}
+
+/* --- ACCIONES --- */
+.btn-action {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 0 3px;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+.btn-action-edit { background: rgba(255,193,7, 0.1); color: #ffc107; border-color: rgba(255,193,7,0.2); }
+.btn-action-edit:hover { background: #ffc107; color: #000; }
+
+.btn-action-delete { background: rgba(220,53,69, 0.1); color: #dc3545; border-color: rgba(220,53,69,0.2); }
+.btn-action-delete:hover { background: #dc3545; color: #fff; }
+
+/* --- PAGINACIÓN HUD --- */
+.pagination-hud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 8px;
+    border-top: 1px solid #1a1a1a;
+}
+.btn-page {
+    background: #111;
+    border: 1px solid #222;
+    color: #666;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: all 0.2s;
+    border-radius: 4px;
+}
+.btn-page:hover:not(:disabled) {
+    border-color: var(--brand-red);
+    color: #fff;
+    background: #1a1a1a;
+}
+.btn-page.active {
+    background: var(--brand-red);
+    border-color: var(--brand-red);
+    color: #fff;
+}
+.btn-page:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Modales Cyber */
+.modal-cyber {
+    border: 1px solid var(--brand-red) !important;
+    background: #0a0a0a !important;
+    box-shadow: 0 0 50px rgba(0,0,0,0.9);
+    border-radius: var(--modern-radius) !important;
+}
+.modal-cyber .modal-header { border-bottom: 1px solid #222 !important; }
+.modal-cyber .modal-footer { border-top: 1px solid #222 !important; }
+
+/* Scrollbar Moderna */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #222; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--brand-red); }

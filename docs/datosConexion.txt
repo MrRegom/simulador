@@ -1,0 +1,43 @@
+Datos de Ingreso a la cuenta:
+
+Username: arsimrac
+Password: jQx1)qXB61-6Xs
+
+Control Panel URL: https://holo.lagserv.com:2083/
+Una vez que la información DNS se haya propagado también podrás ingresar desde http://www.a4rsimracing.cl:2082/
+
+Información del Servidor.
+
+Server Name: holo.lagserv.com
+
+DATOS DE CONEXIÓN DNS (DEBE MODIFICAR ESTOS DATOS EN SU PROVEEDOR DE DOMINIOS)
+
+Servidor NS1 : ns1.laghost.net ()
+Servidor NS2 : ns2.laghost.net ()
+Servidor NS3 : ns3.laghost.net ()
+
+Para subir tu sitio
+
+Temporalmente puedes utilizar las siguientes direcciones para subir tu sitio:
+
+FTP Temporal: holo.lagserv.com
+
+Una vez que la información DNS se haya propagado puedes utilizar los siguientes datos:
+
+FTP Hostname: a4rsimracing.cl
+Webpage URL: http://www.a4rsimracing.cl
+
+
+===============
+
+
+Imprescindibles (contenido subido por usuarios)
+
+public/uploads/pilotos/
+Fotos de competidores.
+public/uploads/ads/
+Imágenes de publicidad.
+Recomendado
+3. public/uploads/ (completa)
+
+Por si en el futuro guardas más cosas ahí.
